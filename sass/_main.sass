@@ -1,0 +1,193 @@
+.section-first
+    display: grid
+    grid-template-rows: 59rem
+    background: url(../img/фон-1.jpg) center center / cover no-repeat
+    border-bottom: .3rem solid #FFF
+    @include respond(tab-land)
+        grid-template-rows: 26rem
+        grid-template-columns: 114rem
+    @include respond(tab-port)
+        grid-template-rows: 40rem
+        grid-template-columns: 88rem
+    @include respond(phone)
+        grid-template-rows: 36rem
+        grid-template-columns: 115rem
+
+    &__nav-menu
+        padding: 2.5rem 9.5rem
+        @include respond(tab-port)
+            display: flex
+            padding: 2.5rem 2.5rem
+            justify-content: center
+        @include respond(tab-land)
+            padding: 2.5rem 6.5rem
+
+    &__btn
+        position: relative
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        top: -5rem
+        left: 160rem
+        @include respond(tab-land)
+            top: -5rem
+            left: 93rem
+        @include respond(tab-port)
+            left: 85rem
+            top: -4rem
+        @include respond(phone)
+            left: 69rem
+    &__box
+        position: relative
+        top: 7rem
+        padding-left: 9rem
+
+.pic
+    @include respond(tab-port)
+        width: 50%
+    @include respond(phone)
+        width: 20%
+.nav-menu
+    &__link
+        padding-right: 7rem
+        &-new
+            text-decoration: none
+            padding-left: 1rem
+            padding-right: 7rem
+.logo
+    &:hover
+        transform: scale(1.1)
+        transition: 0.25s
+        z-index: 20
+
+        transform: scale(.95)
+
+.pic-img
+    &:hover
+        filter: invert(1)
+        transition: 0.25s
+.section-second
+    display: grid
+    grid-template-rows: 17rem
+    background: url(../img/фон-2.jpg) center center / cover no-repeat
+    border-bottom: .3rem solid #FFF
+    &__img
+        padding-left: 83rem
+        padding-top: 5rem
+        @include respond(tab-land)
+            padding-left: 47rem
+        @include respond(tab-port)
+            padding-left: 45rem
+        @include respond(phone)
+            padding-left: 33rem
+    &__box
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__card
+        width: 85rem
+        height: 16rem
+        border-radius: 2.5rem .5rem
+        border: .3rem solid #FFF
+        background: rgba(217, 217, 217, 0.26)
+        margin-bottom: 5rem
+    &__text
+        // margin: 2rem 4rem
+        padding: 2rem 4rem
+        &-1
+            // margin: 4rem 4rem
+            padding: 4rem 4rem
+.second-third
+    display: grid
+    grid-template-rows: 17rem
+    background: url(../img/фон-3.jpg) center center / cover no-repeat
+    border-bottom: .3rem solid #FFF
+    &__img
+        padding-left: 76rem
+        padding-top: 5rem
+        @include respond(tab-land)
+            padding-left: 36rem
+        @include respond(tab-port)
+            padding-left: 34rem
+        @include respond(phone)
+            padding-left: 18rem
+    &__box-scroll
+        display: flex
+        justify-content: center
+    &__scroll
+        width: 84rem
+        display: flex
+        justify-content: space-between
+    &__scroll-img
+        width: 5.5rem
+        height: 5.5rem
+        border-radius: 1.5rem
+        border: .2rem solid #FFF
+        transition: all .3s
+        cursor: pointer
+        &:hover
+            transform: scale(1.1)
+            opacity: 0.5
+            transition: 0.25s
+            z-index: 20
+    &:hover &__scroll-img:not(:hover)
+        transform: scale(.95)
+
+    &__box-card
+        display: flex
+        justify-content: center
+        padding: 5rem 0
+    &__card
+        width: 90rem
+        display: flex
+        justify-content: space-between
+        transition: all 3s
+    &__photo
+        width: 30rem
+        height: 30rem
+        border-radius: 2.5rem .5rem
+        border: .3rem solid #FFF
+        transition: .2 all
+    &__inform
+        width: 58.5rem
+        height: 30rem
+        border-radius: 2.5rem .5rem
+        border: .3rem solid #FFF
+        background: rgba(0, 0, 0, 0.63)
+        padding: 5rem 1rem 5rem 2rem
+        font-size: 2.2rem
+        display: flex
+        align-items: center
+        justify-content: center
+
+.section-four
+    background: url(../img/fon-sectionfour.jpg)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border-bottom: 0.3rem solid #FFF
+    &__h1
+        margin: 5rem
+    &__box
+        width: 120rem
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        margin-bottom: 5rem
+        @include respond(tab-land)
+
+        @include respond(phone)
+            width: 95rem
+    &__img
+        transition: 0.25s
+        max-width: 30rem
+        box-shadow: 0 0 1rem #000
+        border-radius: 2.5rem 0.5rem
+        border: 0.2rem solid #fff
+        margin: 1.5rem 1rem
+        &:hover
+            opacity: 0.5
+            z-index: 20
